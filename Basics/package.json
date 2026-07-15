@@ -15,6 +15,7 @@
     "typescript": "^7.0.2"
   },
   "dependencies": {
+    "@types/axios": "^0.9.36",
     "axios": "^1.18.1"
   }
 }
