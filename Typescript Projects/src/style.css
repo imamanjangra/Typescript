@@ -1,0 +1,231 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+
+    color:white;
+
+    padding:30px;
+}
+
+.heading{
+
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.heading h1{
+
+    font-size:40px;
+    color:#00e5ff;
+    margin-bottom:10px;
+}
+
+.heading p{
+
+    color:#ddd;
+}
+
+.search-box{
+
+    width:100%;
+    max-width:550px;
+
+    display:flex;
+
+    margin-bottom:40px;
+}
+
+.search-box input{
+
+    flex:1;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:10px 0 0 10px;
+
+    font-size:18px;
+}
+
+.search-box input:focus{
+
+    outline:none;
+
+    box-shadow:0 0 10px cyan;
+}
+
+.search-box button{
+
+    padding:15px 25px;
+
+    border:none;
+
+    cursor:pointer;
+
+    background:#00bcd4;
+
+    color:white;
+
+    font-size:18px;
+
+    border-radius:0 10px 10px 0;
+
+    transition:.3s;
+}
+
+.search-box button:hover{
+
+    background:#0097a7;
+}
+
+#profile-container{
+
+    width:100%;
+
+    max-width:700px;
+}
+
+#profile{
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(15px);
+
+    border-radius:20px;
+
+    padding:30px;
+
+    text-align:center;
+
+    box-shadow:0 0 20px rgba(0,255,255,.3);
+}
+
+#avatar{
+
+    width:150px;
+
+    height:150px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    border:5px solid cyan;
+
+    margin-bottom:20px;
+}
+
+#name{
+
+    color:#00e5ff;
+
+    margin-bottom:10px;
+}
+
+#bio{
+
+    color:#ddd;
+
+    margin-bottom:25px;
+}
+
+.stats{
+
+    display:flex;
+
+    justify-content:space-around;
+
+    margin-bottom:25px;
+}
+
+.stats span{
+
+    font-size:28px;
+
+    font-weight:bold;
+}
+
+.stats p{
+
+    margin-top:5px;
+
+    color:#ccc;
+}
+
+hr{
+
+    border:1px solid rgba(255,255,255,.2);
+
+    margin:20px 0;
+}
+
+#repos{
+
+    list-style:none;
+}
+
+#repos li{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    background:rgba(255,255,255,.08);
+
+    margin:12px 0;
+
+    padding:12px;
+
+    border-radius:10px;
+}
+
+#repos a{
+
+    color:#00e5ff;
+
+    text-decoration:none;
+
+    font-weight:bold;
+}
+
+#repos a:hover{
+
+    text-decoration:underline;
+}
+
+#repos span{
+
+    font-size:14px;
+
+    color:#ddd;
+}
+
+.hidden{
+
+    display:none;
+}
+
+#error{
+
+    color:red;
+
+    margin-top:20px;
+
+    font-size:18px;
+}
