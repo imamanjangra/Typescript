@@ -1,5 +1,6 @@
 import './App.css'
-import { Wether } from './components/Weather';
+import Theme from './components/Theme.tsx';
+import { Wether } from './components/Weather.tsx';
 
 function App() {
  
@@ -7,6 +8,7 @@ function App() {
   return (
     <>
     <Wether/>
+    <Theme/>
     </>
   )
 }
