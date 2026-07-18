@@ -1,9 +1,12 @@
 import { configureStore } from '@reduxjs/toolkit';
 import CounterReducer from '../Features/Counter/CounterSlice.ts';
-
+import ThemeReducer from "../Features/Theme/ThemeSlice.ts";
+import TodoReducer from "../Features/Todo/TodoSlice.ts"
 export const store = configureStore({
     reducer : {
         counter : CounterReducer,
+        mode : ThemeReducer,
+        todo : TodoReducer,
     },
 });
 
